@@ -9,7 +9,7 @@ import { Product } from '../models/product';
 export class CartService {
 
   constructor() { }
-  //sepet ol.cartItemsı kullandık
+  //sepet ol.cartItems'ı kullandık
   addToCart(product:Product){
     let item = CartItems.find(c=>c.product.productId===product.productId)
     if (item) {
